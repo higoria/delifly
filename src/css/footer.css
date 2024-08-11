@@ -1,0 +1,142 @@
+.footer-div-conteiner {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.col1-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.col1-footer img {
+  width: 340px;
+}
+
+.col2-footer h1,
+.col3-footer h1,
+.col4-footer h1 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.col2-footer .form-footer input {
+  margin-bottom: 60px;
+}
+
+.col3-footer ul,
+.col4-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.arrow {
+  display: none;
+}
+
+.form-footer input {
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 1px solid #fc8a06;
+}
+.form-footer button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #fc8a06;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 1517.12px) {
+  .col2-footer h1,
+  .col3-footer h1,
+  .col4-footer h1 {
+    font-size: 1rem;
+  }
+  .col3-footer ul li,
+  .col4-footer ul li {
+    font-size: 0.9rem;
+  }
+  .col1-footer img {
+    width: 320px;
+  }
+  .redes-sociais img {
+    width: 40px;
+  }
+  .col1-footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1050.15px) and (min-width: 750px) {
+  .col4-footer {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 892.75px) and (min-width: 750px) {
+  .col3-footer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-div-conteiner {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    gap: 20px;
+  }
+  .col2-footer h1,
+  .col3-footer h1,
+  .col4-footer h1 {
+    padding-bottom: 0px;
+  }
+  .col2-footer .form-footer input {
+    margin-bottom: 5px;
+  }
+  .col2-footer .form-footer button {
+    margin-bottom: 5px;
+  }
+  .col-gerais {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+  }
+  .col4-footer .ul-geral,
+  .col3-footer .ul-geral {
+    display: none;
+  }
+  .col4-footer .ul-geral.ativo,
+  .col3-footer .ul-geral.ativo {
+    display: block;
+  }
+  .col4-footer {
+    margin-bottom: 50px;
+  }
+  .col3-footer,
+  .col4-footer {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+  }
+  .col1-footer img {
+    width: 230px;
+  }
+  .redes-sociais img {
+    width: 30px;
+  }
+}

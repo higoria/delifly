@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  width: 1700px;
+  margin: 0 auto;
+  padding-inline: 40px;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #d9d9d9;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.1rem !important;
+  }
+  h2,
+  h3 {
+    font-size: 1rem !important;
+  }
+  a,
+  p,
+  li {
+    font-size: 0.8rem !important;
+  }
+}

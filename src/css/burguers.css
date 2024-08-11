@@ -1,0 +1,109 @@
+.burgers-section-conteiner{
+  width: 100%;
+  height: 700px;
+  margin-bottom: 100px;
+}
+.burgers-section-conteiner h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.sanduiches-geral{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.divs-sanduiches{
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+padding: 20px;
+align-items: center;
+border-radius: 8px;
+position: relative;
+height: 260px;
+}
+.divs-sanduiches h3{
+  font-size: 1.3rem;
+  font-weight: 700;
+  max-width: max-content;
+}
+.divs-sanduiches .btn-pedir{
+  font-size: 1.2rem;
+  background-color: chartreuse;
+  padding: 10px 40px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+}
+.divs-sanduiches p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 29ch;
+}
+.div-img-do-sanduba img{
+  border-radius: 20px;
+}
+
+.valor-geral{
+  padding-bottom: 20px;
+}
+
+@media (max-width:1496px){
+  .sanduiches-geral{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .div-img-do-sanduba img{
+    max-width: 140px;
+  }
+  .burgers-section-conteiner{
+    height: 900px;
+  }
+  .divs-sanduiches{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    height: 260px;
+  }
+}
+@media (max-width:1050px){
+  .sanduiches-geral{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .burgers-section-conteiner{
+    height: 1700px;
+  }
+}
+
+@media (max-width:510px){
+  .div-img-do-sanduba img{
+    margin-top: 20px;
+    max-width: 190px;
+    height: 120px;
+  }
+  .divs-sanduiches{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 8px;
+    position: relative;
+     height: auto;
+  }
+  .burgers-section-conteiner{
+    width: 100%;
+    height: 2400px;
+  }
+}

@@ -1,0 +1,173 @@
+.div-info-conteiner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+padding: 80px;
+gap: 30px;
+border-radius: 10px;
+margin-bottom: 100px;
+}
+
+.col2 .texto-col2 .texto-principal{
+  width: 30ch;
+}
+
+.col1 .titulo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.col1 .titulo .h1-titulo-col1,.col2 .titulo-col2 .h1-titulo-col2,.col3 .h1Style{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #03081F;
+}
+.horarios-funcionamento{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.col1 .horarios-funcionamento h2{
+  font-weight: 700;
+}
+
+.col1 .horarios-funcionamento span{
+  font-weight: normal;
+}
+
+.col2 .titulo-col2{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.texto-col2 .texto-principal{
+  font-size: 1.3rem;
+  line-height: 50px;
+  padding-bottom: 60px;
+}
+
+.texto-col2 .telefone{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.texto-col2 .numero-tel{
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.col3{
+  display: flex;
+  flex-direction: column;
+}
+
+.col3 .h1Style{
+  padding-bottom: 15px;
+}
+
+.col3 .p-cidade{
+  font-size: 1.4rem;
+  color: #FC8A06;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.endereço-col3{
+  padding-bottom: 50px;
+  width: 30ch;
+  font-size: 1.4rem;
+}
+
+.website{
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.col3 .link{
+  font-size: 1.4rem;
+  color: #FC8A06;
+}
+
+@media (max-width:1602px){
+  .div-info-conteiner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  padding: 70px;
+  gap: 10px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  }
+  .col1 .titulo .h1-titulo-col1,.col2 .titulo-col2 .h1-titulo-col2,.col3 .h1Style{
+    font-size: 1.3rem;
+  }
+  .horarios-funcionamento,.texto-col2,.telefone,.numero-tel{
+    font-size: 0.9rem;
+  }
+  .col3 .endereço-col3{
+    font-size: 1.1rem;
+  }
+  .texto-col2 .texto-principal{
+    font-size: 1.2rem;
+    line-height: 45px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width:1350px){
+  .col1 .titulo .h1-titulo-col1{
+    font-size: 1.2rem;
+  }
+  .col2 .titulo-col2 .h1-titulo-col2{
+    font-size: 1.2rem;
+  }
+  .horarios-funcionamento{
+    font-size: 0.7rem;
+  }
+  .texto-col2 .texto-principal{
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .col3 .endereço-col3{
+    font-size: 1.1rem;
+  }
+  .div-info-conteiner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  padding: 70px;
+  gap: 10px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  }
+}
+
+@media (max-width:1216px){
+  .div-info-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  padding: 70px;
+  gap: 50px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  }
+}
+
+@media (max-width:449px){
+  .div-info-conteiner{
+    padding: 30px;
+  }
+  .col3{
+    padding-left: -60px;
+  }
+}
