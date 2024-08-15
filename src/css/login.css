@@ -129,14 +129,15 @@
 .modal-Login.ativo {
   display: flex;
 }
-.closeX-login {
+.closeX-login,
+.closeX-cart {
   position: absolute;
   top: -30px;
-  left: -10px;
+  left: -5px;
   background-color: #fc8a06;
   border-radius: 50px;
-  padding: 10px;
-  width: 50px;
+  padding: 5px;
+  width: 40px;
   cursor: pointer;
 }
 

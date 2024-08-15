@@ -1,81 +1,83 @@
-.headerconteiner{
+.headerconteiner {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.navconteiner{
+.navconteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.ulNav{
+.ulNav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 60px;
 }
 
-.loginBtn{
+.loginBtn {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.h1Logo{
+.h1Logo {
   font-size: 2.5rem;
-  font-weight: 800;  
-  font-family: 'Luckiest Guy', sans-serif;                                                                              
+  font-weight: 800;
+  font-family: "Luckiest Guy", sans-serif;
 }
-.spanLogo{
-  color: #FC8A06;
+.spanLogo {
+  color: #fc8a06;
 }
 
-.ulNav li{
+.ulNav li {
   font-size: 1.1rem;
   font-weight: 600;
 }
-.cart{
+.cart {
   cursor: pointer;
 }
-.ulNav a,.cart{
+.ulNav a,
+.cart {
   box-sizing: border-box;
   padding: 10px 20px;
 }
-.ulNav .aNav:hover,.cart:hover{
-  background-color: #FC8A06;
+.ulNav .aNav:hover,
+.cart:hover {
+  background-color: #fc8a06;
   border-radius: 50px;
   color: #fff;
 }
-.loginBtn{
+.loginBtn {
   cursor: pointer;
 }
-.divLogin{
-  background-color: #03081F;
+.divLogin {
+  background-color: #03081f;
   border-radius: 50px;
 }
 
-.divLogin a{
+.divLogin a {
   color: #fff !important;
 }
 
-.li-login{
+.li-login {
   color: #fff;
 }
 
-@media (max-width:1285px){
-  .ulNav{
+@media (max-width: 1285px) {
+  .ulNav {
     display: none;
   }
-  .ulNav.ativo{
+  .ulNav.ativo {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
     align-items: flex-end;
     position: absolute;
     right: 20px;
     top: 100px;
   }
-  .headerconteiner.ativo{
+  .headerconteiner.ativo {
     background-color: #fff;
     padding-bottom: 300px;
   }

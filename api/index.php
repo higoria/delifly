@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +34,15 @@
         <div class="divLogin">
           <a class="loginBtn">
             <img src="src/imgs/login.png" alt="">
-            <li class="li-login">Login/Registrar</li>
+            <li class="li-login">
+              <?php
+              if (isset($_SESSION['nomeUsuario'])) {
+                echo $_SESSION['nomeUsuario'];
+              } else {
+                echo "Login/Cadastrar";
+              }
+              ?>
+            </li>
           </a>
         </div>
       </ul>
@@ -90,73 +101,73 @@
 
         <div class="divs-sanduiches sanduba01">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo Bacon Turbo</h3>
+            <h3 class="nome-geral nome-geral-js">Combo Bacon Turbo</h3>
             <p class="disc-geral">Hambúrguer Bacon turbo, 1 Batata frita grande, 1 Cola cola 600ML</p>
-            <h3 class="valor-geral">R$ 32,50</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 32,50</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer1.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer1.svg" alt="">
           </div>
         </div>
 
         <div class="divs-sanduiches sanduba02">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo Trivial</h3>
+            <h3 class="nome-geral nome-geral-js">Combo Trivial</h3>
             <p class="disc-geral">Hambúrguer com 160g de carne, 1 Batata frita media, 1 Cola cola 600ML</p>
-            <h3 class="valor-geral">R$ 29,99</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 29,99</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer2.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer2.svg " alt="">
           </div>
         </div>
 
         <div class="divs-sanduiches sanduba03">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo Gulas</h3>
+            <h3 class="nome-geral nome-geral-js">Combo Gulas</h3>
             <p class="disc-geral">Hambúrguer com 3x hambúrguer, 1 Batata frita pequena, 1 Cola cola lata</p>
-            <h3 class="valor-geral">R$ 38,30</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 38,30</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer3.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer3.svg" alt="">
           </div>
         </div>
 
         <div class="divs-sanduiches sanduba04">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo muita fome</h3>
+            <h3 class="nome-geral nome-geral-js">Combo muita fome</h3>
             <p class="disc-geral">Hambúrguer Bacon duplo é hamburguer duplo, 1 Batata frita grande, 1 Guarana 1L</p>
-            <h3 class="valor-geral">R$ 41,50</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 41,50</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer4.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer4.svg" alt="">
           </div>
         </div>
 
         <div class="divs-sanduiches sanduba05">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo Costela</h3>
+            <h3 class="nome-geral nome-geral-js">Combo Costela</h3>
             <p class="disc-geral">Hambúrguer com 160g de Costela premium, 1 Batata frita grande, 1 Cola cola 600ML</p>
-            <h3 class="valor-geral">R$ 36,50</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 36,50</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer5.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer5.svg" alt="">
           </div>
         </div>
 
         <div class="divs-sanduiches sanduba06">
           <div class="div-disc-geral">
-            <h3 class="nome-geral">Combo Frango</h3>
+            <h3 class="nome-geral nome-geral-js">Combo Frango</h3>
             <p class="disc-geral">Hambúrguer com 160g de frango, 1 Batata frita media, 1 Cola cola lata</p>
-            <h3 class="valor-geral">R$ 28,20</h3>
-            <a class="btn-pedir" href="">Pedir</a>
+            <h3 class="valor-geral valor-js">R$ 28,20</h3>
+            <a class="btn-pedir pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-sanduba">
-            <img src="src/imgs/burguer6.svg" alt="">
+            <img class="img-product-js" src="src/imgs/burguer6.svg" alt="">
           </div>
         </div>
       </div>
@@ -170,73 +181,73 @@
 
         <div class="divs-fritas fritas01">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Porção de pasteis</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Porção de pasteis</h3>
             <p class="disc-geral-fritas">Contem 30 unidades de pasteis crocantes.</p>
-            <h3 class="valor-geral-fritas">R$ 25,10</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 25,10</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas1.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas1.svg" alt="">
           </div>
         </div>
 
         <div class="divs-fritas fritas02">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Batata Frita Max</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Batata Frita Max</h3>
             <p class="disc-geral-fritas">Uma porçao de batata com bacon é cheddar</p>
-            <h3 class="valor-geral-fritas">R$ 35,99</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 35,99</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas2.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas2.svg" alt="">
           </div>
         </div>
 
         <div class="divs-fritas fritas03">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Balde de queijos</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Balde de queijos</h3>
             <p class="disc-geral-fritas">Um balde delicioso contendo diversos tipos de queijos.</p>
-            <h3 class="valor-geral-fritas">R$ 31,30</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 31,30</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas3.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas3.svg" alt="">
           </div>
         </div>
 
         <div class="divs-fritas fritas04">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Combo Supremo</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Combo Supremo</h3>
             <p class="disc-geral-fritas">Um combo de frango frito com fritas extremamente crocantes.</p>
-            <h3 class="valor-geral-fritas">R$ 41,50</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 41,50</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas4.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas4.svg" alt="">
           </div>
         </div>
 
         <div class="divs-fritas fritas05">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Cebolas Gargamel</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Cebolas Gargamel</h3>
             <p class="disc-geral-fritas">Um combo de cebolas fritas,contendo 30unidades.</p>
-            <h3 class="valor-geral-fritas">R$ 33,50</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 33,50</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas5.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas5.svg" alt="">
           </div>
         </div>
 
         <div class="divs-fritas fritas06">
           <div class="div-disc-geral-fritas">
-            <h3 class="nome-geral-fritas">Fritas</h3>
+            <h3 class="nome-geral-fritas nome-geral-js">Fritas</h3>
             <p class="disc-geral-fritas">Batatas simples para quem ta com pouca fome.</p>
-            <h3 class="valor-geral-fritas">R$ 21,20</h3>
-            <a class="btn-pedir-fritas" href="">Pedir</a>
+            <h3 class="valor-geral-fritas valor-js">R$ 21,20</h3>
+            <a class="btn-pedir-fritas pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-fritas">
-            <img src="src/imgs/fritas6.svg" alt="">
+            <img class="img-product-js" src="src/imgs/fritas6.svg" alt="">
           </div>
         </div>
 
@@ -251,73 +262,73 @@
 
         <div class="divs-drinks drinks01">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Batida de maça verde</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Batida de maça verde</h3>
             <p class="disc-geral-drinks">Contendo alcool, para deixar sua noite mais animada.</p>
-            <h3 class="valor-geral-drinks">R$ 19,10</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 19,10</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink1.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink1.svg" alt="">
           </div>
         </div>
 
         <div class="divs-drinks drinks02">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Chá verde</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Chá verde</h3>
             <p class="disc-geral-drinks">Nada melhor do que um chá gelado.</p>
-            <h3 class="valor-geral-drinks">R$ 15,99</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 15,99</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink2.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink2.svg" alt="">
           </div>
         </div>
 
         <div class="divs-drinks drinks03">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Aperol</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Aperol</h3>
             <p class="disc-geral-drinks">O melhor drink para relaxar na noite crua.</p>
-            <h3 class="valor-geral-drinks">R$ 26,30</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 26,30</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink3.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink3.svg" alt="">
           </div>
         </div>
 
         <div class="divs-drinks drinks04">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Pina Colada</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Pina Colada</h3>
             <p class="disc-geral-drinks">Uma mistura entre abacaxi e leite condensado.</p>
-            <h3 class="valor-geral-drinks">R$ 22,50</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 22,50</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink4.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink4.svg" alt="">
           </div>
         </div>
 
         <div class="divs-drinks drinks05">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Drink Gargamel</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Drink Gargamel</h3>
             <p class="disc-geral-drinks">Uma mistura entre gengibre e whisky.</p>
-            <h3 class="valor-geral-drinks">R$ 33,50</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 33,50</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink5.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink5.svg" alt="">
           </div>
         </div>
 
         <div class="divs-drinks drinks06">
           <div class="div-disc-geral-drinks">
-            <h3 class="nome-geral-drinks">Suco de laranja</h3>
+            <h3 class="nome-geral-drinks nome-geral-js">Suco de laranja</h3>
             <p class="disc-geral-drinks">Nada melhor do que aquele suco gelado de laranja.</p>
-            <h3 class="valor-geral-drinks">R$ 21,20</h3>
-            <a class="btn-pedir-drinks" href="">Pedir</a>
+            <h3 class="valor-geral-drinks valor-js">R$ 21,20</h3>
+            <a class="btn-pedir-drinks pedir-btn-js">Pedir</a>
           </div>
           <div class="div-img-do-drinks">
-            <img src="src/imgs/drink6.svg" alt="">
+            <img class="img-product-js" src="src/imgs/drink6.svg" alt="">
           </div>
         </div>
       </div>
@@ -471,24 +482,45 @@
 
   <section class="modal-carrinho">
     <div class="modal-conteiner">
-      <img class="closeX" src="src/imgs/Close.svg" alt="">
-      <h1 class="titulo-cart">Seu carrinho de pedidos.</h1>
-      <div class="desc-do-pedido">
-        <img class="pedido-carrinho" src="src/imgs/burguer1.svg" alt="" width="70px" height="70px">
-        <h1 class="nome-do-pedido-h1">Combo Big Burguer</h1>
-        <div class="mais-menos-add">
-          <button class="menos"><img src="src/imgs/menos.svg" alt=""></button>
-          <input class="inputqnt" type="text" id="quantity-input" value="1">
-          <button class="mais" type="button"><img src="src/imgs/mais.svg" alt=""></button>
+      <img class="closeX-cart" src="src/imgs/Close.svg" alt="">
+      <h1 class="titulo-cart">Carrinho de compras</h1>
+      <div class="tabela-conteiner">
+        <table class="table">
+          <tr class="especificaçao-table">
+            <th>Item</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+          </tr>
+        </table>
+      </div>
+      <h3 class="span-aviso-cart"></h3>
+      <div class="total-e-pagamento">
+        <h3 class="total-cart">Total: R$ <span class="spanTotal"></span></h3>
+        <div class="button-pagamento">
+          <button class="button-pagament-ui" style="--clr: #00ad54;">
+            <span class="button-decor"></span>
+            <div class="button-content btn-no-drop">
+              <div class="button__icon btn-no-drop">
+                <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                  <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                  <mask id="icon-payments-cat_svg__a" fill="#fff">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                    </path>
+                  </mask>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                  <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                  <defs>
+                    <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                      <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <a class="button__text btn-no-drop">Pagar</a>
+            </div>
+          </button>
         </div>
-      </div>
-
-      <div class="total">
-        <h1>Total: <span>R$ 120,00</span></h1>
-      </div>
-      <div class="pagamento">
-        <img src="src/imgs/seta.svg" alt="">
-        <h1>Pagar</h1>
       </div>
     </div>
   </section>
@@ -510,7 +542,7 @@
       </div>
 
       <div class="flex-column">
-        <label>Senha </label>
+        <label>Senha</label>
       </div>
       <div class="inputForm">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20">
@@ -528,7 +560,7 @@
         <span class="span">Esqueceu a senha?</span>
       </div>
       <button class="button-submit">Entrar</button>
-      <p class="p">Não possui conta? <span class="span">Cadastre - se</span>
+      <p class="p">Não possui conta? <a href="cadastro.html"><span class="span">Cadastre - se</span></a>
 
       </p>
       <p class="p line">Ou com</p>

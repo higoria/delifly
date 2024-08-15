@@ -18,6 +18,7 @@ ul {
   list-style: none;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 h1,

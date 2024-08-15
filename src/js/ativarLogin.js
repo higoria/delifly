@@ -1,16 +1,19 @@
 export default function ativarLogin() {
-  const modalConteiner = document.querySelector(".modal-Login");
-  const fecharModal = document.querySelector(".closeX-login");
-  const btnLogin = document.querySelector(".li-login");
-  console.log(modalConteiner);
-  console.log(fecharModal);
-  console.log(btnLogin);
+  document.addEventListener("DOMContentLoaded", () => {
+    const modalConteiner = document.querySelector(".modal-Login");
+    const fecharModal = document.querySelector(".closeX-login");
+    const btnLogin = document.querySelector(".li-login");
 
-  btnLogin.addEventListener("click", () => {
-    modalConteiner.classList.add("ativo");
-  });
+    if (btnLogin && modalConteiner && fecharModal) {
+      btnLogin.addEventListener("click", () => {
+        modalConteiner.classList.add("ativo");
+      });
 
-  fecharModal.addEventListener("click", () => {
-    modalConteiner.classList.remove("ativo");
+      fecharModal.addEventListener("click", () => {
+        modalConteiner.classList.remove("ativo");
+      });
+    } else {
+      console.error("Um ou mais elementos não foram encontrados.");
+    }
   });
 }

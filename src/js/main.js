@@ -1,8 +1,12 @@
 import ativarBtnMenu from "./botaoMenu.js";
 import ativarTermo from "./abrirTermos.js";
-import ativaCarrinho from "./carrinho.js";
+import ativaCarrinho from "./ativaCarrinho.js";
 import ativarLogin from "./ativarLogin.js";
+import ativarFuncCarrinho from "./funcCarrinho.js";
+import ativarMsg from "./msgDB.js";
 ativarLogin();
+ativarMsg();
 ativaCarrinho();
 ativarTermo();
 ativarBtnMenu();
+ativarFuncCarrinho();
